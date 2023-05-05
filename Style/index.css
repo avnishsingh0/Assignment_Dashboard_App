@@ -1,0 +1,158 @@
+/* Navbar styles */
+
+header {
+  background-color: #fff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  height: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  /* border: 3px solid; */
+}
+
+.navbar-logo img {
+  height: 60px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu li {
+  margin-right: 1.5rem;
+}
+
+.navbar-menu a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+}
+
+.navbar-menu a:hover {
+  background-color: red;
+  color: aliceblue;
+}
+
+.navbar-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navbar-menu {
+    top: 80px;
+    left: 10;
+    width: 100%;
+    padding: 1rem;
+    z-index: 9998;
+  }
+
+  .navbar-menu li {
+    display: block;
+    margin-bottom: 1rem;
+    margin: auto;
+  }
+
+  .navbar-menu a {
+    display: block;
+    padding: 0.5rem 0;
+    border-radius: 0;
+  }
+
+  .navbar-toggle {
+    display: block;
+    cursor: pointer;
+  }
+
+  .navbar-toggle span {
+    display: block;
+    height: 2px;
+    background-color: #333;
+    margin-bottom: 5px;
+  }
+  
+}
+
+/* Style the form container */
+#create {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  /* margin-top: 1rem; */
+  border-radius: 10px;
+}
+
+/* Style the form groups */
+.form-group {
+  margin-bottom: 10px;
+}
+
+/* Style the form inputs */
+input[type="text"], textarea, select, input[type="date"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  width: 50%;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: auto;
+  display: grid;
+  align-items: center;
+  font-weight: bold;
+}
+input[type="submit"]:hover {
+  background-color: red;
+}
+
+/* Add responsive styling */
+@media screen and (max-width: 600px) {
+  /* Reduce the font-size of the form inputs */
+  input[type="text"], textarea, select, input[type="date"] {
+    font-size: 14px;
+  }
+  
+  /* Reduce the padding of the submit button */
+  input[type="submit"] {
+    padding: 10px 15px;
+    width: 80%;
+  }
+}
+h2{
+margin: auto;
+text-align: center;
+padding: 10px;
+}
+main{
+  margin-top: 5rem;
+}

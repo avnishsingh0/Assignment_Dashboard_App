@@ -1,0 +1,248 @@
+/* Style for the main assignments container */
+.assignments {
+  
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+#sprint-1,
+#sprint-2,
+#sprint-3,
+#sprint-4{
+  display: flex;
+  
+  align-items: flex-start;
+  /* max-width: 1200px; */
+  margin: 0 auto;
+ display: grid;
+ grid-template-columns: repeat(4,1fr);
+ gap: 10px;
+  margin-bottom: 20px;
+  /* background-color: #f4f4f4; */
+  border-radius: 5px;
+
+  /* border: 1px solid; */
+  overflow: hidden;
+}
+#sprint-1 >div{
+  border: 0px solid ;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: grid;
+  align-items: center;
+  text-align: center;
+  
+
+}
+#sprint-1>div>p{
+  /* color: #d32f2f; */
+  font-size: 20px;
+  font-weight: 500;
+}
+#sprint-1>div>button{
+  /* color: #d32f2f; */
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px;
+  width: 80%;
+  border: 0;
+  background-color: #4caf50;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  margin: auto;
+ 
+}
+#sprint-1>div>button:hover{
+  background-color: red;
+}
+#sprint-2 >div{
+  border: 0px solid ;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: grid;
+  align-items: center;
+  text-align: center;
+}
+#sprint-2>div>p{
+  /* color: #d32f2f; */
+  font-size: 20px;
+  font-weight: 500;
+}
+#sprint-2>div>button{
+  /* color: #d32f2f; */
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px;
+  width: 80%;
+  border: 0;
+  background-color: #4caf50;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  margin: auto;
+ 
+}
+#sprint-2>div>button:hover{
+  background-color: red;
+}
+#sprint-3 >div{
+  border: 0px solid ;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: grid;
+  align-items: center;
+  text-align: center;
+}
+#sprint-3>div>p{
+  /* color: #d32f2f; */
+  font-size: 20px;
+  font-weight: 500;
+}
+#sprint-3>div>button{
+  /* color: #d32f2f; */
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px;
+  width: 80%;
+  border: 0;
+  background-color: #4caf50;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  margin: auto;
+ 
+}
+#sprint-3>div>button:hover{
+  background-color: red;
+}
+#sprint-4 >div{
+  border: 0px solid ;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: grid;
+  align-items: center;
+  text-align: center;
+}
+#sprint-4>div>p{
+  /* color: #d32f2f; */
+  font-size: 20px;
+  font-weight: 500;
+}
+#sprint-4>div>button{
+  /* color: #d32f2f; */
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px;
+  width: 80%;
+  border: 0;
+  background-color: #4caf50;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+ margin: auto;
+}
+#sprint-4>div>button:hover{
+  background-color: red;
+}
+
+/* Style for the sprint section header */
+.assignments > div > h1 {
+  padding: 20px;
+  margin: 0;
+  font-size: 1.2rem;
+  background-color: #555;
+  color: #fff;
+}
+
+/* Style for the assignment container */
+.assignments > div > div {
+  padding: 20px;  
+}
+
+@media only screen and (max-width: 767px) {
+  #sprint-4{
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+  #sprint-4>div>button{
+    width: 80%;
+    margin: auto;
+  }
+  #sprint-3{
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+  #sprint-3>div>button{
+    width: 80%;
+    margin: auto;
+  }
+  #sprint-2{
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+  #sprint-2>div>button{
+    width: 80%;
+    margin: auto;
+  }
+  #sprint-1{
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+  #sprint-1>div>button{
+    width: 80%;
+    margin: auto;
+  }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  #sprint-4{
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  }
+  #sprint-4>div>button{
+    width: 80%;
+    margin: auto;
+  }
+  #sprint-3{
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  }
+  #sprint-3>div>button{
+    width: 80%;
+    margin: auto;
+  }
+  #sprint-2{
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  }
+  #sprint-2>div>button{
+    width: 80%;
+    margin: auto;
+  }
+  #sprint-1{
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  }
+  #sprint-1>div>button{
+    width: 80%;
+    margin: auto;
+  }
+}
+
+
